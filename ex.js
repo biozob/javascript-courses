@@ -1,6 +1,9 @@
 // TODO: define addFavoriteBook(..) function
-
-// TODO: define printFavoriteBooks() function
+function addFavoriteBook(bookName){
+    if (!bookName.includes('Great')){
+        favoriteBooks.push(bookName);
+    }
+};
 
 var favoriteBooks = [];
 
@@ -10,14 +13,7 @@ addFavoriteBook("Crime & Punishment");
 addFavoriteBook("Great Expectations");
 addFavoriteBook("You Don't Know JS");
 
-function addFavoriteBook(bookName){
-    if (!bookName.includes('Great')){
-        favoriteBooks.push(bookName);
-    }
-};
-
-// TODO: print out favorite books
-
+// TODO: define printFavoriteBooks() function
 function printFavoriteBooks(){
     let bookLength = favoriteBooks.length;
     console.log("Favorite books: " + bookLength);
@@ -27,4 +23,5 @@ function printFavoriteBooks(){
     }
 }
 
+// TODO: print out favorite books
 printFavoriteBooks();
