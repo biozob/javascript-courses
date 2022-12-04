@@ -16,15 +16,15 @@ function addFavoriteBook(bookName){
     }
 };
 
+// TODO: print out favorite books
+
 function printFavoriteBooks(){
     let bookLength = favoriteBooks.length;
     console.log("Favorite books: " + bookLength);
-    
+
     for ( let book of favoriteBooks) {
         console.log(book);
     }
 }
 
 printFavoriteBooks();
-
-// TODO: print out favorite books
