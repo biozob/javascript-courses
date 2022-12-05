@@ -21,7 +21,6 @@ function loadBooks(bookArg) {
     fakeAjax(BOOK_API, function (books) {
         for (let book of books) {
             bookArg.addFavoriteBook(book);
-            // console.log(book);
         }
         bookArg.printFavoriteBooks();
     });
